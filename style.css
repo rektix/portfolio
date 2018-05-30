@@ -8,11 +8,6 @@
     to { transform: translateX(0); }
   }
 
-.comeIn {
-    transform: translateX(20%);
-    animation: come-in 0.8s ease forwards;
-}
-
 body {    
     color: #dddddd;
     font-family: 'Arimo', sans-serif;
@@ -22,7 +17,7 @@ body {
 }
 
 .navbar-brand {
-    font-size: 25px;
+    font-size: 20px;
 }
 .content {
     background-image: url('background.jpg');
@@ -52,18 +47,18 @@ nav{
 }
 
 h1 {
-    font-size: 90px;
+    font-size: 70px;
     color: #7994FF;
     font-family: 'Patua One', cursive;
 }
 
 h2 {
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'Patua One', cursive;
 }
 
 h3 {
-    font-size: 50px;
+    font-size: 40px;
     color: #2445CC;
     font-family: 'Patua One', cursive;
     padding-bottom: 10px;
@@ -102,9 +97,7 @@ h3 {
     vertical-align: bottom;  
      
 }
-.fill {
-    animation: fill 2s;
-}
+
 #cp {
     width: 80%;
     max-width: 80%;        
@@ -239,5 +232,21 @@ p {
 @media only screen and (min-width: 1000px) {    
     .product {
         width: 30%;
+    }
+    h1 {
+        font-size: 90px;
+    }
+    h2 {
+        font-size: 60px;
+    }
+    h3 {
+        font-size: 50px;
+    }
+    .comeIn {
+        transform: translateX(20%);
+        animation: come-in 0.8s ease forwards;
+    }
+    .fill {
+        animation: fill 2s;
     }
 }
