@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Patua+One');
+
+@keyframes fill {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+@keyframes come-in {
+    to { transform: translateX(0); }
+  }
+
+.comeIn {
+    transform: translateX(20%);
+    animation: come-in 0.8s ease forwards;
+}
+
+body {    
+    color: #dddddd;
+    font-family: 'Arimo', sans-serif;
+    font-size: 20px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.navbar-brand {
+    font-size: 25px;
+}
+.content {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+}
+.welcome-screen{
+    height: 100vh;    
+    background-color: #1a3294;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    position: fixed !important;
+    z-index: 5;
+}
+.nav-link{
+    color: #7994FF !important;
+}
+
+.titles {
+    text-align: center;
+    margin: 5%;
+}
+
+h1 {
+    font-size: 90px;
+    color: #7994FF;
+    font-family: 'Patua One', cursive;
+}
+
+h2 {
+    font-size: 60px;
+    font-family: 'Patua One', cursive;
+}
+
+h3 {
+    font-size: 50px;
+    color: #2445CC;
+    font-family: 'Patua One', cursive;
+    padding-bottom: 10px;
+}
+#about{
+    display: inline-block;
+    width: 90%;  
+    margin: 5%;  
+}
+
+.about-div {
+    display: inline-block;
+    vertical-align: middle;    
+    width: 100%;
+}
+
+.text-a, .skills, #work h3 {
+    background-color:rgb(49, 48, 48);     
+    border-radius: 10px;
+    padding: 5%;
+    margin: 5%;
+    display: block;
+}
+#profile {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5%;
+    width: 90%;  
+    margin: 5%;
+}
+
+.progress {
+    display: inline-block;
+    height: 3vh;
+    background-color: #3D4A7F; 
+    vertical-align: bottom;  
+     
+}
+.fill {
+    animation: fill 2s;
+}
+#cp {
+    width: 80%;
+    max-width: 80%;        
+}
+
+#gd {
+    width: 50%;
+    max-width: 50%;        
+}
+
+#fe {
+    width: 60%;
+    max-width: 60%;    
+}
+
+#be {
+    width: 40%;
+    max-width: 40%;    
+}
+
+#ml {
+    width: 30%;
+    max-width: 30%;    
+}
+
+#an {
+    width: 20%;
+    max-width: 20%;
+}
+
+table {
+    width: 100%;    
+}
+
+tr {
+    height: 30px;
+}
+
+td {
+    width: 50%; 
+    padding: 7px;      
+}
+
+.flexed, .icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+
+
+i {
+    padding: 25px;    
+    background-color: #7994FF;
+    border-radius: 100%;
+    margin: 20px;
+    width: 110px;
+    text-align: center;    
+}
+
+.image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product {
+    width: 90%;    
+    padding: 25px;
+}
+
+.product  img {
+    width: 100%;
+    margin: 20px 0;
+}
+
+#work h3, #contact h3 {
+    text-align: center;
+}
+
+#work a {
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding: 10px;
+    background-color: #1a3294;
+    color: #dddddd;
+}
+
+a {
+    color: #dddddd;
+}
+
+#work a:hover {
+    background-color: #2445CC;
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+#contact {
+    background-color:rgb(49, 48, 48);     
+    padding: 5%;
+    width: 100%;
+}
+
+#contact h3 {
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (min-width: 600px) {    
+    #about{
+        width: 80%;
+        margin: 0 10%;    
+    }
+    .about-div{                   
+        width: 50%;        
+    }
+    #profile {
+        width: 30%;
+        margin: 5% 7.5%;        
+    }
+    .product {
+        width: 45%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {    
+    .product {
+        width: 30%;
+    }
+}
